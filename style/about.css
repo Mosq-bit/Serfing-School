@@ -1,0 +1,228 @@
+.about {
+    padding-bottom: 150px;
+}
+
+.about__inner {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.about__content {
+    max-width: 560px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about__subtitle {
+    font-weight: 700;
+    font-size: 20px;
+    color: var(--blue);
+    transition: all 0.3s ease;
+}
+
+.about__title {
+    font-weight: 800;
+    font-size: 64px;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+.about__info-list {
+    margin: 80px 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.about__info-item {
+    border: 1px solid var(--blue);
+    border-radius: 30px;
+    padding: 10px 20px;
+    font-weight: 700;
+    font-size: 26px;
+    color: var(--blue);
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.2);
+    transition: all 0.3s ease;
+}
+
+.about__info-item:hover {
+    background: rgba(255, 255, 255, 0.4);
+    transform: translateY(-3px);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about__text {
+    margin-top: auto;
+    transition: all 0.3s ease;
+}
+
+.about__text span {
+    text-transform: uppercase;
+    color: var(--blue);
+    font-weight: 700;
+    transition: all 0.3s ease;
+}
+
+.about__text p + p {
+    margin-top: 20px;
+}
+
+.about__text:hover {
+    transform: translateX(5px);
+}
+
+.about__text:hover span {
+    color: var(--black);
+    text-shadow: 0 0 2px rgba(0, 0, 0, 0.1);
+}
+
+.about__img {
+    position: relative;
+    transition: all 0.3s ease;
+}
+
+.about__img:hover {
+    transform: scale(1.02);
+}
+
+.about__pic {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+}
+
+.about__img:hover .about__pic {
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.about__link {
+    position: absolute;
+    bottom: 46px;
+    right: 68px;
+    font-weight: 800;
+    font-size: 32px;
+    text-transform: uppercase;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 30px;
+    padding: 10px 20px;
+    backdrop-filter: blur(4px);
+    background: rgba(255, 255, 255, 0.3);
+    transition: all 0.4s ease;
+}
+
+.about__link:hover {
+    border: 1px solid var(--black);
+    color: var(--black);
+    background: rgba(255, 255, 255, 0.8);
+    transform: translateY(-5px) scale(1.05);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Адаптив */
+@media (max-width: 1200px) {
+    .about__title {
+        font-size: 48px;
+    }
+    
+    .about__info-item {
+        font-size: 22px;
+        padding: 8px 16px;
+    }
+    
+    .about__link {
+        font-size: 28px;
+        bottom: 30px;
+        right: 40px;
+    }
+}
+
+@media (max-width: 992px) {
+    .about__inner {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .about__content {
+        max-width: 100%;
+        margin-bottom: 40px;
+    }
+    
+    .about__info-list {
+        margin: 40px 0 20px;
+    }
+    
+    .about__img {
+        width: 100%;
+        max-width: 600px;
+    }
+    
+    .about__link {
+        font-size: 24px;
+        bottom: 20px;
+        right: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    .about {
+        padding-bottom: 80px;
+    }
+    
+    .about__title {
+        font-size: 36px;
+    }
+    
+    .about__info-item {
+        font-size: 18px;
+    }
+    
+    .about__link {
+        font-size: 20px;
+        padding: 8px 16px;
+    }
+}
+
+@media (max-width: 576px) {
+    .about__title {
+        font-size: 28px;
+    }
+    
+    .about__subtitle {
+        font-size: 16px;
+    }
+    
+    .about__info-list {
+        gap: 8px;
+    }
+    
+    .about__info-item {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+    
+    .about__link {
+        font-size: 18px;
+        bottom: 15px;
+        right: 15px;
+    }
+    
+    .about__text p + p {
+        margin-top: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    .about__link {
+        font-size: 16px;
+        padding: 6px 12px;
+    }
+    
+    .about__info-item {
+        font-size: 14px;
+    }
+}
